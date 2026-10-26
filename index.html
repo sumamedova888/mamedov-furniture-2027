@@ -5,37 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Mamedov Furniture</title>
 <meta name="description" content="Mamedov Furniture: ölçüyə görə mətbəx, şkaf-kupe, yataq otağı, dəhliz və ofis mebeli. Tbilisi, Rustavi, Marneuli, Qardabani. Pulsuz çatdırılma və quraşdırma.">
+<meta name="theme-color" content="#F8F5EF">
 <meta property="og:title" content="Mamedov Furniture">
 <meta property="og:description" content="Ölçüyə görə mebel. Pulsuz çatdırılma və quraşdırma. Biznes sifarişlərinə endirim.">
 <meta property="og:image" content="11.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231A1F1D'/%3E%3Ctext x='20' y='27' font-family='Arial' font-weight='700' font-size='20' fill='%23fff' text-anchor='middle'%3EM%3C/text%3E%3Crect x='27' y='27' width='6' height='6' rx='2' fill='%239A7428'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700;800&display=swap">
 <style>
 /* Layout: info strip + sticky bar, split hero with photo pair, benefit strip, 3x2 field columns, slider, business band, master + process, area + contact */
 :root{
-  --bg:#F4F3F0; --surface:#FFFFFF; --ink:#1A1F1D; --muted:#5A625E; --line:#E0DED8;
-  --brass:#9A7428; --brass-soft:#F3ECDD; --brass-ink:#FFFFFF;
-  --green:#24402F; --green-ink:#EEF3EF; --green-soft:#E4EBE6; --wa:#1FA855;
-  --band:#161B19; --band-ink:#EDEBE5; --band-muted:#A7AEAA; --band-line:#2C3330;
-  --shadow:0 1px 2px rgba(20,24,22,.05),0 10px 30px rgba(20,24,22,.07);
-  --display:"Unbounded","Manrope",system-ui,sans-serif;
-  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  /* Brand palette (Mamedov Furniture guide): ivory canvas, beige panels, deep brown type, gold beige highlights, natural wood, olive accent */
+  --bg:#F8F5EF; --surface:#FFFDF9; --ink:#5B4636; --muted:#7A6656; --line:#E6DCCF;
+  --wood:#8B6F56;
+  --brass:#C9A880; --brass-soft:#E6D5C3; --brass-ink:#5B4636;
+  --green:#6B7B6B; --green-ink:#F8F5EF; --green-soft:#E7E9E2; --wa:#1FA855;
+  --band:#3F3128; --band-ink:#F8F5EF; --band-muted:#D3C4B2; --band-line:#5E4B3D;
+  --shadow:0 1px 2px rgba(91,70,54,.06),0 12px 32px rgba(91,70,54,.08);
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:"Montserrat",system-ui,-apple-system,"Segoe UI",sans-serif;
   --r:16px;
+  color-scheme:light;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#111413; --surface:#191D1B; --ink:#ECEAE4; --muted:#A2A9A5; --line:#2A302D;
-  --brass:#D4AE5F; --brass-soft:#2A2416; --brass-ink:#1A1608;
-  --green:#1D3327; --green-ink:#E6EEE9; --green-soft:#1A2620; --wa:#25C062;
-  --band:#0A0C0B; --band-ink:#ECEAE4; --band-muted:#9AA19D; --band-line:#232926;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35); color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#111413; --surface:#191D1B; --ink:#ECEAE4; --muted:#A2A9A5; --line:#2A302D;
-  --brass:#D4AE5F; --brass-soft:#2A2416; --brass-ink:#1A1608;
-  --green:#1D3327; --green-ink:#E6EEE9; --green-soft:#1A2620; --wa:#25C062;
-  --band:#0A0C0B; --band-ink:#ECEAE4; --band-muted:#9AA19D; --band-line:#232926;
-  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35); color-scheme:dark}
 
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
@@ -43,10 +36,10 @@ body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16p
 a{color:inherit}
 img{height:auto;max-width:100%}
 .wrap{max-width:1200px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
-h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.015em;font-weight:600}
+h1,h2,h3{font-family:var(--display);line-height:1.15;margin:0;text-wrap:balance;letter-spacing:-.005em;font-weight:600}
 h2{font-size:clamp(1.65rem,3.2vw,2.4rem)}
 p{margin:0}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--brass)}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:.76rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--wood)}
 .eyebrow::before{content:"";width:22px;height:2px;background:currentColor}
 section{padding-block:clamp(64px,8vw,104px)}
 .sec-head{display:flex;flex-direction:column;gap:12px;margin-bottom:44px;max-width:660px}
@@ -58,7 +51,9 @@ svg.i{width:24px;height:24px;flex:none}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:12px;font:inherit;font-weight:700;font-size:.97rem;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background .15s ease}
 .btn:hover{transform:translateY(-1px)}
 .btn:focus-visible,.icon-btn:focus-visible,.lang button:focus-visible,a:focus-visible,.copy:focus-visible,.track:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
-.btn-wa{background:var(--wa);color:#fff;box-shadow:0 6px 18px color-mix(in srgb,var(--wa) 35%,transparent)}
+.btn-wa,.btn-wa:visited{background:var(--ink);color:var(--bg);box-shadow:0 8px 20px rgba(91,70,54,.22)}
+.btn-wa:hover{background:#4A382B}
+.contact .btn-wa,.biz-band .btn-wa{background:var(--brass);color:var(--ink);box-shadow:none}
 .btn-line{border-color:var(--line);color:var(--ink);background:var(--surface)}
 .btn-line:hover{border-color:var(--ink)}
 .btn svg{width:20px;height:20px;flex:none}
@@ -74,9 +69,10 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;gap:24px;min-height:72px}
 .logo{display:flex;align-items:center;gap:12px;text-decoration:none;margin-right:auto}
-.logo-mark{width:40px;height:40px;border-radius:10px;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-family:var(--display);font-weight:700;font-size:1.1rem;position:relative}
-.logo-mark::after{content:"";position:absolute;right:7px;bottom:7px;width:6px;height:6px;border-radius:2px;background:var(--brass)}
-.logo-text{font-family:var(--display);font-weight:600;font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+.logo img{height:46px;width:auto;display:block}
+.logo-text{display:flex;flex-direction:column;line-height:1;color:var(--ink)}
+.logo-text b{font-family:var(--display);font-weight:700;font-size:1.32rem;letter-spacing:.08em}
+.logo-text small{font-family:var(--body);font-weight:600;font-size:.6rem;letter-spacing:.42em;margin-top:5px;color:var(--wood)}
 nav{display:flex;gap:26px}
 nav a{text-decoration:none;font-weight:600;font-size:.93rem;color:var(--muted);position:relative;padding-block:6px}
 nav a:hover{color:var(--ink)}
@@ -85,7 +81,7 @@ nav a:hover{color:var(--ink)}
 .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
 .bar .btn{padding:11px 16px;font-size:.9rem}
 @media (max-width:980px){nav{display:none}}
-@media (max-width:560px){.bar{gap:10px}.bar .btn-wa span{display:none}.bar .btn{padding:11px}.logo-text{font-size:.88rem}.logo-mark{width:36px;height:36px}}
+@media (max-width:560px){.bar{gap:10px}.bar .btn-wa span{display:none}.bar .btn{padding:11px}.logo img{height:38px}.logo-text b{font-size:1.05rem}.logo-text small{font-size:.5rem;letter-spacing:.32em}}
 
 /* hero */
 .hero{padding-block:clamp(40px,6vw,80px) clamp(40px,5vw,64px)}
@@ -94,7 +90,7 @@ nav a:hover{color:var(--ink)}
 .pill{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;padding:7px 14px 7px 8px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:.84rem;font-weight:700;box-shadow:var(--shadow)}
 .pill b{background:var(--brass);color:var(--brass-ink);border-radius:999px;padding:3px 9px;font-size:.74rem;letter-spacing:.04em}
 .hero h1{font-size:clamp(2.1rem,4.8vw,3.7rem)}
-.hero h1 em{font-style:normal;color:var(--brass)}
+.hero h1 em{font-style:italic;color:var(--wood)}
 .lead{font-size:1.1rem;color:var(--muted);max-width:52ch}
 .cta-row{display:flex;flex-wrap:wrap;gap:12px}
 .facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);padding-top:22px;margin-top:4px}
@@ -107,8 +103,6 @@ nav a:hover{color:var(--ink)}
 .hero-visual .sub{position:absolute;left:0;bottom:0;width:38%;aspect-ratio:4/3;object-fit:cover;border-radius:14px;border:5px solid var(--bg);box-shadow:var(--shadow)}
 .badge-float{position:absolute;right:16px;top:16px;background:var(--surface);color:var(--ink);padding:12px 16px;border-radius:14px;box-shadow:var(--shadow);display:flex;gap:12px;align-items:center;max-width:240px}
 .badge-float .ic{width:40px;height:40px;border-radius:10px;background:var(--green-soft);color:var(--green);display:grid;place-items:center;flex:none}
-:root[data-theme="dark"] .badge-float .ic{color:var(--green-ink)}
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .badge-float .ic{color:var(--green-ink)}}
 .badge-float b{display:block;font-size:.9rem;line-height:1.25}
 .badge-float span{font-size:.78rem;color:var(--muted)}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-visual{order:-1}}
@@ -118,12 +112,12 @@ nav a:hover{color:var(--ink)}
 .benefits{display:grid;grid-template-columns:repeat(4,1fr);background:var(--surface);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);overflow:hidden}
 .ben{display:flex;gap:14px;align-items:flex-start;padding:22px 22px;min-width:0}
 .ben + .ben{border-left:1px solid var(--line)}
-.ben .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;flex:none;background:var(--brass-soft);color:var(--brass)}
+.ben .ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;flex:none;background:var(--brass-soft);color:var(--wood)}
 .ben b{display:block;font-size:.98rem;line-height:1.3;margin-bottom:3px}
 .ben span{font-size:.86rem;color:var(--muted);line-height:1.45;display:block}
-.ben.hl{background:var(--green);color:var(--green-ink)}
-.ben.hl .ic{background:color-mix(in srgb,var(--green-ink) 14%,transparent);color:var(--green-ink)}
-.ben.hl span{color:color-mix(in srgb,var(--green-ink) 75%,transparent)}
+.ben.hl{background:var(--ink);color:var(--bg)}
+.ben.hl .ic{background:color-mix(in srgb,var(--bg) 12%,transparent);color:var(--brass)}
+.ben.hl span{color:color-mix(in srgb,var(--bg) 78%,transparent)}
 @media (max-width:980px){.benefits{grid-template-columns:repeat(2,1fr)}.ben:nth-child(3){border-left:0}.ben:nth-child(n+3){border-top:1px solid var(--line)}}
 @media (max-width:560px){.benefits{grid-template-columns:1fr}.ben + .ben{border-left:0;border-top:1px solid var(--line)}}
 
@@ -136,10 +130,10 @@ nav a:hover{color:var(--ink)}
 .field h3{font-size:1.1rem}
 .field p{color:var(--muted);font-size:.95rem}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
-.tags span{font-size:.78rem;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
-.field.biz{background:var(--brass-soft);border-color:color-mix(in srgb,var(--brass) 40%,var(--line))}
+.tags span{font-size:.76rem;font-weight:600;padding:5px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.field.biz{background:var(--brass-soft);border-color:var(--brass)}
 .field.biz .ic{background:var(--brass);color:var(--brass-ink)}
-.field .flag{position:absolute;top:22px;right:22px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--brass);color:var(--brass-ink);padding:4px 10px;border-radius:999px}
+.field .flag{position:absolute;top:22px;right:22px;font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--green);color:var(--green-ink);padding:4px 10px;border-radius:999px}
 @media (max-width:980px){.fields{grid-template-columns:repeat(2,1fr)}}
 @media (max-width:600px){.fields{grid-template-columns:1fr}}
 
@@ -166,17 +160,16 @@ nav a:hover{color:var(--ink)}
 .thumbs button:hover{opacity:.9}
 
 /* business */
-.biz-band{background:var(--green);color:var(--green-ink);border-radius:24px;padding:clamp(28px,5vw,60px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,56px);align-items:center;position:relative;overflow:hidden}
-.biz-band::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;border:40px solid color-mix(in srgb,var(--green-ink) 6%,transparent);pointer-events:none}
+.biz-band{background:var(--ink);color:var(--bg);border-radius:24px;padding:clamp(28px,5vw,60px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,56px);align-items:center;position:relative;overflow:hidden}
+.biz-band::after{content:"";position:absolute;right:-80px;top:-80px;width:280px;height:280px;border-radius:50%;border:40px solid color-mix(in srgb,var(--bg) 6%,transparent);pointer-events:none}
 .biz-band .eyebrow{color:var(--brass)}
-:root[data-theme="dark"] .biz-band .eyebrow{color:var(--brass)}
-.biz-band h2{color:var(--green-ink)}
-.biz-band p{color:color-mix(in srgb,var(--green-ink) 78%,transparent);margin-top:14px;max-width:50ch}
+.biz-band h2{color:var(--bg)}
+.biz-band p{color:color-mix(in srgb,var(--bg) 78%,transparent);margin-top:14px;max-width:50ch}
 .biz-copy{min-width:0;position:relative;z-index:1}
 .discount{display:inline-flex;align-items:center;gap:12px;margin-top:22px;background:var(--brass);color:var(--brass-ink);padding:12px 18px;border-radius:12px;font-weight:800}
 .discount svg{width:22px;height:22px}
 .biz-list{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative;z-index:1;min-width:0}
-.biz-list li{background:color-mix(in srgb,var(--green-ink) 8%,transparent);border:1px solid color-mix(in srgb,var(--green-ink) 14%,transparent);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:.95rem}
+.biz-list li{background:color-mix(in srgb,var(--bg) 8%,transparent);border:1px solid color-mix(in srgb,var(--bg) 14%,transparent);border-radius:12px;padding:16px;display:flex;flex-direction:column;gap:8px;font-weight:700;font-size:.95rem}
 .biz-list li svg{width:24px;height:24px;color:var(--brass)}
 .biz-band .btn{margin-top:24px}
 @media (max-width:900px){.biz-band{grid-template-columns:1fr}}
@@ -191,11 +184,11 @@ nav a:hover{color:var(--ink)}
 .master p{color:var(--muted)}
 .master ul{list-style:none;padding:0;margin:4px 0 0;display:flex;flex-direction:column;gap:12px}
 .master li{display:flex;gap:12px;align-items:center;font-weight:600}
-.master li svg{width:22px;height:22px;color:var(--brass)}
+.master li svg{width:22px;height:22px;color:var(--green)}
 .steps{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;counter-reset:s;min-width:0}
 .steps li{counter-increment:s;display:grid;grid-template-columns:56px 1fr;gap:16px;padding:22px 0;border-top:1px solid var(--line)}
 .steps li:last-child{border-bottom:1px solid var(--line)}
-.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-weight:700;font-size:1.3rem;color:var(--brass);font-variant-numeric:tabular-nums}
+.steps li::before{content:counter(s,decimal-leading-zero);font-family:var(--display);font-weight:700;font-size:1.5rem;color:var(--wood);font-variant-numeric:tabular-nums}
 .steps h3{font-size:1.03rem;margin-bottom:4px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
 .steps h3 .free{font-family:var(--body);font-size:.72rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;background:var(--green);color:var(--green-ink);padding:3px 9px;border-radius:999px}
 .steps p{color:var(--muted);font-size:.95rem}
@@ -204,7 +197,7 @@ nav a:hover{color:var(--ink)}
 /* area + contact */
 .area{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
 .city{border:1px solid var(--line);border-radius:14px;padding:20px;background:var(--surface);display:flex;flex-direction:column;gap:6px;min-width:0}
-.city svg{width:22px;height:22px;color:var(--brass)}
+.city svg{width:22px;height:22px;color:var(--wood)}
 .city b{font-family:var(--display);font-size:1.05rem;font-weight:600}
 .city span{font-size:.85rem;color:var(--muted)}
 .city.more{background:transparent;border-style:dashed}
@@ -230,7 +223,7 @@ nav a:hover{color:var(--ink)}
 
 footer{padding-block:36px calc(36px + 72px);color:var(--muted);font-size:.88rem;border-top:1px solid var(--line);margin-top:clamp(64px,8vw,104px)}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
-footer .logo-text{color:var(--ink);font-size:.95rem}
+
 
 .wa-float{position:fixed;right:calc(18px + env(safe-area-inset-right,0px));bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:8;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 10px 28px rgba(0,0,0,.28)}
 .wa-float svg{width:30px;height:30px}
@@ -279,8 +272,7 @@ footer .logo-text{color:var(--ink);font-size:.95rem}
 <header>
   <div class="wrap bar">
     <a class="logo" href="#top" aria-label="Mamedov Furniture">
-      <span class="logo-mark">M</span>
-      <span class="logo-text">Mamedov Furniture</span>
+      <img src="logo.png" alt="" width="222" height="180"><span class="logo-text"><b>MAMEDOV</b><small>FURNITURE</small></span>
     </a>
     <nav aria-label="Main">
       <a href="#services" data-i18n="nav.services">Xidmətlər</a>
@@ -462,7 +454,7 @@ footer .logo-text{color:var(--ink);font-size:.95rem}
 
 <footer>
   <div class="wrap">
-    <a class="logo" href="#top" style="margin-right:0"><span class="logo-mark">M</span><span class="logo-text">Mamedov Furniture</span></a>
+    <a class="logo" href="#top" style="margin-right:0"><img src="logo.png" alt="" width="222" height="180"><span class="logo-text"><b>MAMEDOV</b><small>FURNITURE</small></span></a>
     <span data-i18n="ft">Tbilisi · Rustavi · Marneuli · Qardabani</span>
     <span>© 2026 Mamedov Furniture</span>
   </div>
